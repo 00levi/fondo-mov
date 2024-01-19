@@ -1,0 +1,108 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+}
+
+.fondo-mondrian {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* color fondo */
+    background-color: #7fd9f7;
+    
+    background-size: cover; /* Ajuste el tamaño de la imagen para cubrir todo el contenedor */
+}
+
+.rectangulo-modificado {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: background-color 1s ease, opacity 1s ease; /* Transición suave del color de fondo y opacidad */
+    opacity: 1; /* Opacidad inicial del 100% */
+}
+
+/*primera base*/
+#polygon1 {
+    clip-path: polygon(60% 0%, 100% 0%, 100% 50%, 50% 50%); /* Polígono 1 */
+}
+
+#polygon2 {
+    clip-path: polygon(50% 50%, 40% 0%, 60% 0%);
+}
+#polygon3 {
+    clip-path: polygon(50% 50%, 40% 100%, 60% 100%);
+}
+#polygon4 {
+    clip-path: polygon(50% 50%, 0% 50%, 0% 0%, 40% 0%);
+}
+#polygon5 {
+    clip-path: polygon(50% 50%,0% 50%, 0% 100%, 40% 100%);
+}
+#polygon6 {
+    clip-path: polygon(50% 50%, 60% 100%, 100% 100%, 100% 50%);
+}
+/*segunda base */
+#polygon7 {
+    clip-path: polygon(100% 25%, 100% 50%, 95% 50%); 
+}
+#polygon8 {
+    clip-path: polygon(95% 50%, 105% 0%, 85% 0%);
+}
+#polygon9 {
+    clip-path: polygon(95% 50%, 105% 100%, 85% 100%);
+}
+#polygon10 {
+    clip-path: polygon(95% 50%, 0% 50%, 0% 0%, 85% 0%);
+}
+#polygon11 {
+    clip-path: polygon(95% 50%,0% 50%, 0% 100%, 85% 100%);
+}
+#polygon12 {
+    clip-path: polygon(95% 50%, 100% 75%, 100% 50%);
+}
+/*terdcera base*/
+#polygon13 {
+    clip-path: polygon(75% 75%, 100% 75%, 100% 0%, 90% 0%); 
+}
+#polygon14 {
+    clip-path: polygon(75% 75%, 90% 0%, 60% 0%);
+}
+#polygon15 {
+    clip-path: polygon(75% 75%, 80% 100%, 70% 100%);
+}
+#polygon16 {
+    clip-path: polygon(75% 75%, 0% 75%, 0% 0%, 60% 0%);
+}
+#polygon17 {
+    clip-path: polygon(75% 75%, 0% 75%, 0% 100%, 70% 100%);
+}
+#polygon18 {
+    clip-path: polygon(75% 75%, 100% 75%,100% 100%, 80% 100%);
+}
+/*cuarta base*/
+#polygon19 {
+    clip-path: polygon(15% 75%, 32% 0%, 100% 0%, 100% 75%); 
+}
+#polygon20 {
+    clip-path: polygon(15% 75%, 0% 0%, 32% 0%);
+}
+#polygon21 {
+    clip-path: polygon(15% 75%, 0% 0%, 0% 75%);
+}
+#polygon22 {
+    clip-path: polygon(15% 75%, 0% 75%, 0% 100%, 10% 100%);
+}
+#polygon23 {
+    clip-path: polygon(15% 75%, 21% 100%, 10% 100%);
+}
+#polygon24 {
+    clip-path: polygon(15% 75%, 100% 75%,100% 100%, 21% 100%);
+}
+/*polygono solo*/
+#polygon25 {
+    clip-path: polygon(0% 35%, 0% 0%, 9% 0%);
+}
